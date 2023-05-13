@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Calculator</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    background-color: rgb(56, 52, 52);
+    justify-content: center;
+    box-sizing: border-box;
+}
+.Main{
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(43, 38, 38);
+}
+.icon{
+    border-radius: 10px;
+    padding: 10px;
+}
+.icon p{
+    display: block;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: right;
+    font-size: 30px;
+    background-color: white;
+}
+
+
+.Calculator{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.Number{
+    margin: 10px;
+    border-bottom: rgb(212, 158, 225) 5px solid;
+    border-radius: 10px;
+    background-color: rgba(36, 26, 26, 0.837);
+    width: 25px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+#zero{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 80%;
+    text-align: center;
+}
+#equal{
+    grid-row-start: span 3;
+    grid-row-end: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title{
+    padding: 10px;
+    text-align: right;
+    font-size: 15px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="Main">
+        <div class="icon">
+            <p>0</p>
+        </div>
+        <div class="Calculator">
+            <div class="Number">c</div>
+            <div class="Number">*</div>
+            <div class="Number">/</div>
+            <div class="Number">.</div>
+            <div class="Number">7</div>
+            <div class="Number">8</div>
+            <div class="Number">9</div>
+            <div class="Number">+</div>
+            <div class="Number">4</div>
+            <div class="Number">5</div>
+            <div class="Number">6</div>
+            <div class="Number">-</div>
+            <div class="Number">1</div>
+            <div class="Number">2</div>
+            <div class="Number">3</div>
+            <div class="Number" id="equal">=</div>
+            <div class="Number" id="zero">0</div>
+        </div>
+        <div class="title">
+            Nice calculator by Manu
+        </div>
+    </div> 
+</body>
+</html>
